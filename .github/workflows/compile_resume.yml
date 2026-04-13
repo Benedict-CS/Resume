@@ -39,3 +39,12 @@ jobs:
           body: "Automatically compiled from the latest commit."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push PDF
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add resume.pdf
+          # 如果 PDF 內容沒有變動，commit 會失敗報錯，加上 || exit 0 可以避免腳本中斷
+          git commit -m "chore: auto-generate resume.pdf" || exit 0
+          git push
