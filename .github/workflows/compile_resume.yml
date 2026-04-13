@@ -1,0 +1,38 @@
+name: Build Resume PDF
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: 
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+          compiler: xelatex
+          args: "-interaction=nonstopmode -shell-escape"
+
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Resume-PDF
+          path: resume.pdf
+
+      - name: Release PDF
+        if: github.event_name == 'push' && contains(github.ref, 'main')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: resume.pdf
+          tag_name: latest
+          name: Latest Build
+          body: "Automatically compiled from the latest commit."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
