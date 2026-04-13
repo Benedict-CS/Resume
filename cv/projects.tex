@@ -1,8 +1,8 @@
 %-------------------------------------------------------------------------------
 % SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Projects}
-
+\cvsection{Selected Projects}
+\vspace{-0.25cm} % Tighten spacing between title and content
 
 %-------------------------------------------------------------------------------
 % CONTENT
@@ -11,38 +11,30 @@
 
 %---------------------------------------------------------
   \cventry
-    {Master's Thesis / Industry-Academia Collaboration with Wistron NeWeb Corporation (WNC)} % Arg 1
-    {A CI/CD Framework for Zero Downtime Deployment in Wi-Fi Mesh Networks}      % Arg 2
-    {Feb. 2025 - Jan. 2026} % Arg 4: 注意：學位論文通常不會只有幾個月(Sep 2025-Present)，我幫你改成一般碩士專案時程，如果是別的請自行修改
-    {}                    % Arg 3
+    {Industry-Academia Collaboration with Iscom Online International Info. Inc.} % Project Type / Role
+    {Kubernetes-based Multi-Cluster Hybrid Cloud Management System} % Project Title
+    {Apr. 2024 - Sep. 2024} % Duration
+    {} % Location
     {
       \begin{cvitems}
-        % 只標記 GitHub Actions, USP APIs, TR-369 (核心標準)
-        \item {Integrated \textbf{GitHub Actions} with \textbf{USP APIs} to automate cloud-to-edge container delivery to Root AP via \textbf{TR-369 (USP)} standards.}
-        % 只標記 C-based Controller (核心開發)
-        \item {Developed a \textbf{C-based Controller} bridging USP Agent (via UDS) to Extender APs (via TCP) for synchronized mesh updates.}
-        % 只標記 Linux iptables (核心技術), Zero Downtime (成果)
-        \item {Engineered \textbf{Linux iptables} steering to achieve zero packet loss and \textbf{zero downtime} during Blue-Green/Canary deployments.}
+        \item {Orchestrated hybrid cloud clusters via \textbf{Karmada} and \textbf{GitOps} (ArgoCD/FluxCD) for automated deployments.}
+        \item {Implemented \textbf{Cilium Cluster Mesh} and \textbf{HAProxy} for global traffic steering, failover, and security policies.}
+        \item {Engineered a unified observability stack with \textbf{Thanos}, \textbf{Prometheus}, and \textbf{Grafana} for centralized monitoring.}
       \end{cvitems}
     }
 
-%---------------------------------------------------------
-  \vspace{0.4cm} 
-%---------------------------------------------------------
+  \vspace{0.4cm} % Vertical spacing between project entries
 
   \cventry
-    {Industry-Academia Collaboration with Iscom Online International Info. Inc.} % Arg 1
-    {Kubernetes‑based Multi-Cluster Hybrid Cloud Management System}                    % Arg 2
-    {Apr. 2024 - Sep. 2024} % Arg 4
-    {}                      % Arg 3
+    {Self-Hosted and Self-Maintained Infrastructure} % Project Type / Role
+    {High-Availability HomeLab \& Private Cloud Architecture} % Project Title
+    {Jan. 2026 - Present} % Duration
+    {} % Location
     {
       \begin{cvitems}
-        % 只標記 Karmada, GitOps (核心工具)
-        \item {Orchestrated public cloud and on-premises clusters using \textbf{Karmada} and \textbf{GitOps} (ArgoCD/FluxCD) for automated service propagation.}
-        % 只標記 Cilium, HAProxy (核心網路組件)
-        \item {Implemented \textbf{Cilium Cluster Mesh} and \textbf{HAProxy} to enable global traffic steering, cross-cluster failover, and firewall security policies.}
-        % 只標記 Thanos, Prometheus, Grafana (監控三巨頭)
-        \item {Engineered a unified observability stack integrating \textbf{Thanos}, \textbf{Prometheus}, and \textbf{Grafana} for centralized health monitoring.}
+        \item {Architected self-hosted cloud via \textbf{TrueNAS Scale} and \textbf{ZFS} with tiered storage (RAID1) for data reliability.}
+        \item {Migrated \textbf{Proxmox} workloads to \textbf{container-based (LXC/Docker)} stacks, optimizing system resource efficiency.}
+        \item {Deployed mission-critical services (\textbf{Nextcloud}, \textbf{Immich}) with automated \textbf{SSL/TLS} and backup workflows.}
       \end{cvitems}
     }
 
