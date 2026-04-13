@@ -1,0 +1,95 @@
+% %-------------------------------------------------------------------------------
+% % SECTION TITLE
+% %-------------------------------------------------------------------------------
+% \cvsection{Achievements}
+
+
+% %-------------------------------------------------------------------------------
+% % CONTENT
+% %-------------------------------------------------------------------------------
+% \begin{cvhonors}
+
+% %---------------------------------------------------------
+%   \cvhonor
+%     {Jury Prize (Champion)} % Award
+%     {National Makerthon: Good Health and Well-Being ( Ministry of Education)} % Event
+%     {} % Location
+%     {2022} % Date
+
+% %---------------------------------------------------------
+%   \cvhonor
+%     {Potential Award} % Award
+%     {Vision Get Wild XR Social Welfare ( Meta XR Hub)} % Event
+%     {} % Location
+%     {2023} % Date
+
+% %---------------------------------------------------------
+%   \cvhonor
+%     {Shortlisted} % Award
+%     {Intel DevCup x OpenVINO Toolkit Competition ( Intel Corporation)} % Event
+%     {} % Location
+%     {2021} % Date
+
+% %---------------------------------------------------------
+%   \cvhonor
+%     {Shortlisted} % Award - 這裡改成 Finalist，對應「入圍獎」更強
+%     {5G Mobileheroes ( Industrial Development Administration)} % Event
+%     {} % Location
+%     {2021} % Date
+
+% %---------------------------------------------------------
+% \end{cvhonors}
+
+
+
+
+
+
+
+%-------------------------------------------------------------------------------
+% SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Achievements}
+
+%-------------------------------------------------------------------------------
+% CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+  \vspace{-2mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{2pt} 
+  
+  % 微調後的黃金比例：
+  % 1. 比賽 (L): 自動 (\textwidth - 10.5cm)
+  % 2. 獎項 (L): 3.0cm (給 "Potential Award" 足夠空間)
+  % 3. 單位 (L): 6.5cm (剛剛好放下 Industrial Dev. Admin.)
+  % 4. 日期 (R): 1.0cm (0.8cm 太危險，1.0cm 是安全底線)
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 10.5cm} L{3.0cm} L{6.5cm} R{1.0cm}}
+    
+    % --- Item 1 ---
+    \entrytitlestyle{National Makerthon: Good Health and Well-Being} & 
+    \descriptionstyle{1st Place} & 
+    \descriptionstyle{By Ministry of Education} & 
+    \entrylocationstyle{2022} \\
+
+    % --- Item 2 ---
+    \entrytitlestyle{Vision Get Wild XR Social Welfare} & 
+    \descriptionstyle{Potential Award} & 
+    \descriptionstyle{By Meta XR Hub Taiwan} & 
+    \entrylocationstyle{2023} \\
+
+    % --- Item 3 ---
+    \entrytitlestyle{Intel\textregistered\ DevCup x OpenVINO\texttrademark\ Toolkit Competition} & 
+    
+    \descriptionstyle{Shortlisted} & 
+    \descriptionstyle{By Intel Corporation} & 
+    \entrylocationstyle{2021} \\
+
+    % --- Item 4 ---
+    \entrytitlestyle{5G Mobileheroes} & 
+    \descriptionstyle{Shortlisted} & 
+    \descriptionstyle{By Industrial Development Administration} & 
+    \entrylocationstyle{2021} \\
+
+  \end{tabular*}
+\end{cventries}

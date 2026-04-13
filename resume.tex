@@ -1,0 +1,105 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, a4paper]{russell}
+
+% Configure page margins with geometry
+% \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% 在 \documentclass... 的下一行加入這段
+\geometry{left=1.0cm, top=1.0cm, right=1.0cm, bottom=1.0cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% russell Colors: russell-emerald, russell-skyblue, russell-red, russell-pink, russell-orange
+%                 russell-nephritis, russell-concrete, russell-darknight, russell-purple
+\colorlet{russell}{russell-black}
+% Uncomment if you would like to specify your own color
+% \definecolor{russell}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with russell color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+% PERSONAL INFORMATION
+% Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+
+% Name: {First Name}{Last Name}
+\name{Benedict Ing Ngie}{Tiong}
+
+% Position (Optional)
+% \position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+
+% --- 修改開始 ---
+% 1. 將原本的 address 註解掉，避免它單獨佔一行
+% \address{Hsinchu, Taiwan}
+
+% 2. 將地址合併到 mobile 欄位中，並加上分隔線符號
+% \address{Hsinchu, Taiwan}
+
+\mobile{(+886) 905-754-546}
+% --- 修改結束 ---
+
+\email{benedict.cs12@nycu.edu.tw}
+%\dateofbirth{January 1st, 1970}
+
+% 如果有個人網站或 GitHub，請取消註解並填寫
+\homepage{benedict.winlab.tw} 
+%\github{your-github-id}
+
+% 請將 'benedict-tiong' 替換成你實際的 LinkedIn Username
+\linkedin{benedict-tiong}
+
+
+%-------------------------------------------------------------------------------
+%  BIBLIOGRAPHY
+%-------------------------------------------------------------------------------
+% \addbibresource{cv/references.bib}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% \makecvfooter
+%   {\today}
+%   {Benedict Ing Ngie Tiong~~~·~~~Résumé}
+%   {\thepage}
+
+%-------------------------------------------------------------------------------
+% CV/RESUME CONTENT
+% Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{cv/education.tex}
+\input{cv/projects.tex}
+\input{cv/experience.tex}
+\input{cv/achievements.tex}
+\input{cv/skills.tex}
+
+% \input{cv/interests.tex}
+
+% \vspace*{\fill}
+% \centering{\textbf{References available upon request.}}
+%-------------------------------------------------------------------------------
+\end{document}
