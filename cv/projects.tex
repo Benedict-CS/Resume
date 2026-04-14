@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 % SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Selected Projects}
+\cvsection{Projects}
 \vspace{-0.25cm} % Tighten spacing between title and content
 
 %-------------------------------------------------------------------------------
@@ -9,32 +9,52 @@
 %-------------------------------------------------------------------------------
 \begin{cventries}
 
-%---------------------------------------------------------
+
   \cventry
-    {Industry-Academia Collaboration with Iscom Online International Info. Inc.} % Project Type / Role
-    {Kubernetes-based Multi-Cluster Hybrid Cloud Management System} % Project Title
-    {Apr. 2024 - Sep. 2024} % Duration
+    {Master's Thesis / Industry-Academia Collaboration with Wistron NeWeb Corporation (WNC)} % Project Type / Partnership
+    {A CI/CD Framework for Zero Downtime Deployment in Wi-Fi Mesh Networks} % Project Title
+    {Feb. 2025 - Jan. 2026} % Duration
     {} % Location
     {
       \begin{cvitems}
-        \item {Orchestrated hybrid cloud clusters via \textbf{Karmada} and \textbf{GitOps} (ArgoCD/FluxCD) for automated deployments.}
-        \item {Implemented \textbf{Cilium Cluster Mesh} and \textbf{HAProxy} for global traffic steering, failover, and security policies.}
-        \item {Engineered a unified observability stack with \textbf{Thanos}, \textbf{Prometheus}, and \textbf{Grafana} for centralized monitoring.}
+        \item {Engineered cloud-to-edge CI/CD via \textbf{GitHub Actions} and \textbf{USP (TR-369)}, achieving baseline deployments in \textbf{<30s}.}
+        \item {Built a \textbf{C-based controller} via \textbf{UDS} to orchestrate and synchronize \textbf{LXC} updates across a \textbf{3-node prplOS cluster}.}
+        \item {Implemented \textbf{iptables} traffic steering for \textbf{Blue-Green/Canary}, eliminating \textbf{50-70ms} downtime with \textbf{0 packet loss}.}
       \end{cvitems}
     }
 
   \vspace{0.4cm} % Vertical spacing between project entries
 
+%---------------------------------------------------------
   \cventry
-    {Self-Hosted and Self-Maintained Infrastructure} % Project Type / Role
-    {High-Availability HomeLab \& Private Cloud Architecture} % Project Title
-    {Jan. 2026 - Present} % Duration
+    {Industry-Academia Collaboration with Iscom Online International Info. Inc.} % Project Type / Role
+    {Multi-Cluster Hybrid Cloud Infrastructure Platform} % Project Title
+    {Apr. 2024 - Sep. 2024} % Duration
     {} % Location
     {
       \begin{cvitems}
-        \item {Architected self-hosted cloud via \textbf{TrueNAS Scale} and \textbf{ZFS} with tiered storage (RAID1) for data reliability.}
-        \item {Migrated \textbf{Proxmox} workloads to \textbf{container-based (LXC/Docker)} stacks, optimizing system resource efficiency.}
-        \item {Deployed mission-critical services (\textbf{Nextcloud}, \textbf{Immich}) with automated \textbf{SSL/TLS} and backup workflows.}
+        \item {Orchestrated a \textbf{3-cluster Kubernetes} hybrid cloud via \textbf{Karmada} and \textbf{GitOps} (ArgoCD/Flux) with weighted scheduling.}
+        \item {Implemented \textbf{Cilium Cluster Mesh} and \textbf{HAProxy} for global load balancing, \textbf{cross-cluster failover}, and L7 policies.}
+        \item {Engineered multi-cluster observability via \textbf{Thanos} and \textbf{Prometheus} with \textbf{S3-backed} storage and automated alerts.}
+      \end{cvitems}
+    }
+
+  \vspace{0.4cm} % Vertical spacing between project entries
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+%---------------------------------------------------------
+\cventry
+    {Infrastructure Architect (Personal Project)} 
+    {Bare-Metal Private Cloud and Container CI/CD Platform}
+    {Jan. 2024 - Present} % 日期
+    {} 
+    {%
+      \begin{cvitems} % ★ 這裡直接用 cvitems 就可以了！
+        \item {Architected a \textbf{high-availability} cloud hosting \textbf{Nextcloud/Immich} via \textbf{TrueNAS ZFS}, maintaining \textbf{<1\% idle CPU load}.}
+        \item {Engineered CI/CD pipelines with a self-hosted \textbf{Harbor} registry for automated \textbf{Dockerized} Next.js deployments.}
+        \item {Integrated \textbf{S3-compatible} object storage (\textbf{RustFS}) and \textbf{PostgreSQL} (\textbf{Prisma}) to power a product-grade \textbf{CMS} platform.}
+        \item {Secured infrastructure via \textbf{Cloudflare WAF} and \textbf{Nginx Proxy Manager} with automated \textbf{SSL/TLS} and \textbf{DDoS} mitigation.}
       \end{cvitems}
     }
 

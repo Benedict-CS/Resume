@@ -218,7 +218,7 @@
   \ifempty{#1#4}
     {\def\temprow{}} 
     {\def\temprow{\entrypositionstyle{#1} & \entrydatestyle{#4} \\}} 
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4cm} R{4cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 3.5cm} R{3.5cm}} %日期欄位固定寬度3.5cm
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
       {%
